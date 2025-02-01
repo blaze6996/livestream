@@ -11,7 +11,8 @@ RUN apt update && apt install -y \
     build-essential \
     yt-dlp  
 
-# Copy the stream.sh script into the container
+# Copy the cookies.txt and stream.sh script into the container
+COPY cookies.txt /cookies.txt
 COPY stream.sh /stream.sh
 
 # Give execution permission to the script
