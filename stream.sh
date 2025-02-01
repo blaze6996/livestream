@@ -12,4 +12,4 @@ yt-dlp -u "$YTDLP_USERNAME" -p "$YTDLP_PASSWORD" -f best -o - "$VIDEO_URL" | ffm
 -vf "scale=1080:1920,format=yuv420p" \
 -c:v libx264 -preset ultrafast -b:v 3000k -maxrate 3000k -bufsize 6000k \
 -c:a aac -b:a 128k -ar 44100 \
--f flv "rtmp://a.rtmp.youtube.com/live2/YOUR_STREAM_KEY"
+-f flv "rtmp://a.rtmp.youtube.com/live2/m2x0-dkjr-5e1p-vhdf-bahg"
