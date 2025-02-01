@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# Replace with your YouTube credentials
-YTDLP_USERNAME="sab889899@gmail.com"
-YTDLP_PASSWORD="Doraemon@123"
+
 
 # Replace with the YouTube video URL
 VIDEO_URL="https://www.youtube.com/watch?v=Eba6OYQgRvA"
