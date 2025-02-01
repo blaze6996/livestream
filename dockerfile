@@ -1,26 +1,21 @@
+# Use the latest Ubuntu image
 FROM ubuntu:latest
 
-# Update and install dependencies
+# Update package list and install dependencies
 RUN apt update && apt install -y \
     ffmpeg \
     python3 \
     python3-pip \
     curl \
+    libpq-dev \
     build-essential \
-    libssl-dev \
-    libffi-dev \
-    python3-dev \
-    && apt clean
+    yt-dlp  
 
-# Upgrade pip and install yt-dlp
-RUN python3 -m pip install --upgrade pip && \
-    python3 -m pip install yt-dlp
-
-# Copy the stream script
+# Copy the stream.sh script into the container
 COPY stream.sh /stream.sh
 
-# Make the script executable
+# Give execution permission to the script
 RUN chmod +x /stream.sh
 
-# Execute the script
+# Set the default command to run the script
 CMD ["/bin/bash", "/stream.sh"]
