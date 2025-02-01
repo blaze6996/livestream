@@ -6,10 +6,12 @@ RUN apt update && apt install -y \
     ffmpeg \
     python3 \
     python3-pip \
-    curl
+    curl \
+    libpq-dev \
+    build-essential
 
-# Install yt-dlp using pip
-RUN pip3 install yt-dlp
+# Install yt-dlp using pip3
+RUN pip3 install --upgrade pip && pip3 install yt-dlp
 
 # Copy the stream.sh script into the container
 COPY stream.sh /stream.sh
