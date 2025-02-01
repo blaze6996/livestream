@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # URL of the YouTube video
-VIDEO_URL="https://www.youtube.com/watch?v=Eba6OYQgRvA"
+VIDEO_URL="https://www.youtube.com/watch?v=Eba6OYQgRvA?"
 COOKIES_FILE="/cookies.txt"  # Path to cookies.txt in the container
 
 # Loop to fetch the stream URL and feed it to ffmpeg
